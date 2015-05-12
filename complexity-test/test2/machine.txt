@@ -1,0 +1,104 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                2
+On-line CPU(s) list:   0,1
+Thread(s) per core:    1
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 15
+Model name:            Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz
+Stepping:              11
+CPU MHz:               2331.000
+CPU max MHz:           2331.0000
+CPU min MHz:           1998.0000
+BogoMIPS:              4675.56
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              4096K
+NUMA node0 CPU(s):     0,1
+              total        used        free      shared  buff/cache   available
+Mem:        8175836      872196     5042564        2708     2261076     7030384
+Swap:             0           0           0
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                2
+On-line CPU(s) list:   0,1
+Thread(s) per core:    1
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 15
+Model name:            Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz
+Stepping:              11
+CPU MHz:               2331.000
+CPU max MHz:           2331.0000
+CPU min MHz:           1998.0000
+BogoMIPS:              4675.56
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              4096K
+NUMA node0 CPU(s):     0,1
+              total        used        free      shared  buff/cache   available
+Mem:        8175836      871536     5023000        2708     2281300     7029120
+Swap:             0           0           0
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                2
+On-line CPU(s) list:   0,1
+Thread(s) per core:    1
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 15
+Model name:            Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz
+Stepping:              11
+CPU MHz:               2331.000
+CPU max MHz:           2331.0000
+CPU min MHz:           1998.0000
+BogoMIPS:              4675.56
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              4096K
+NUMA node0 CPU(s):     0,1
+              total        used        free      shared  buff/cache   available
+Mem:        8175836      873408     5019432        2712     2282996     7027220
+Swap:             0           0           0
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                2
+On-line CPU(s) list:   0,1
+Thread(s) per core:    1
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 15
+Model name:            Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz
+Stepping:              11
+CPU MHz:               1998.000
+CPU max MHz:           2331.0000
+CPU min MHz:           1998.0000
+BogoMIPS:              4675.56
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              4096K
+NUMA node0 CPU(s):     0,1
+              total        used        free      shared  buff/cache   available
+Mem:        8175836      874084     5018588        2712     2283164     7026528
+Swap:             0           0           0
