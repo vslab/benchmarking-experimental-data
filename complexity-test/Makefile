@@ -9,6 +9,7 @@ fg:
 clean:
 	rm -f f g fg
 	rm log*
+	rm machine.txt
 .PHONY: clean
 test: f g fg
 	for i in $$(seq 65536 65536 1048576) ; do perf stat -x ',' -e cycles,instructions,cache-misses -o log.f.$$i -r $(REP) ./f $$i ; done
@@ -22,3 +23,5 @@ test: f g fg
 	for i in $$(seq 65536 65536 1048576) ; do perf stat -x ',' -e cycles,instructions,cache-misses -o log.fg.3.$$i -r $(REP) ./fg $$i 0 ; done
 	for i in $$(seq 65536 65536 1048576) ; do perf stat -x ',' -e cache-references,branch-misses,branch-instructions -o log.fg.3.$$i --append -r $(REP) ./fg $$i 0 ; done
 	for file in 'log*' ; do sed '/^$$/ d' -i $$file ; sed '/^#/ d' -i $$file ; done
+	lscpu >> machine.txt
+	free >> machine.txt
