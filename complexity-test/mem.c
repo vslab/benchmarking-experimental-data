@@ -1,21 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+
+int main(int argc, char *argv[])
 {
   int i = 0;
   int res = 0;
   int *buf;
-  buf = (int *) calloc(1024*1024, sizeof(int));
-  for(i=0;i<1024*1024;i++)
+  int jump = 1;
+  int size = 1024*1024*16;
+  int bufsize = 1024*1024*16;
+  int pos = 0;
+  if(argc>1)
     {
-      buf[i] = rand();
-    }
-  for(i=0;i<1024*1024;i++)
+      //size = atoi(argv[1]);
+      sscanf(argv[1], "%d", &jump);
+    } 
+
+  buf = (int *) calloc(bufsize, sizeof(int));
+  // fill the buffer with bounded random data
+  for(i=0;i<size;i++)
     {
-      res = (res + buf[rand() % 1024*1024] % 1024) % 1024;
+      pos = (pos + jump) % bufsize;
+      buf[pos] = i;
     }
-  printf("res=%d", res);
+  // do something with the data to ensure the compiler doesn't take everything away
+  res = buf[rand() % bufsize];
+  printf("res=%d\n", res);
   free(buf);
   return 0;
 }
