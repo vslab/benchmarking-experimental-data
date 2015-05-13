@@ -38,5 +38,5 @@ test: f g fg cpu mem
 	for i in $$(seq 0 1 20) ; do perf stat -x ',' -e $(E2) -o log.mem2.$$((2**$$i)) --append -r $(REP) ./mem $$((2**$$i)) ; done
 
 	for file in 'log*' ; do sed '/^$$/ d' -i $$file ; sed '/^#/ d' -i $$file ; done
-	lscpu >> machine.txt
-	free >> machine.txt
+	#lscpu >> machine.txt
+	#free >> machine.txt

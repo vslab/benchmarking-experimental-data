@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
   // fill the buffer with bounded random data
   for(i=0;i<size;i++)
     {
-      pos = (pos + jump) % bufsize;
+      pos = (pos + jump + 1) % bufsize;
       buf[pos] = i;
     }
   // do something with the data to ensure the compiler doesn't take everything away

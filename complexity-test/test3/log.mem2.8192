@@ -1,6 +1,6 @@
-1244234511,,cycles
-345206808,,instructions
-14990179,,cache-misses
-34208291,,cache-references
-57609,,branch-misses
-27737880,,branch-instructions
+649482857,,cycles
+361286060,,instructions
+1175228,,cache-misses
+33975044,,cache-references
+59104,,branch-misses
+26934316,,branch-instructions
