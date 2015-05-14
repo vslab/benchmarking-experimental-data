@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
   int i = 0;
   int res = 0;
   int *buf;
-  int jump = 1;
+  int jump = 32;
   int size = 1024*1024*16;
   int bufsize = 1024*1024*16;
   int pos = 0;
