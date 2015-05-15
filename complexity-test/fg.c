@@ -65,11 +65,32 @@ int f3(int size)
   return res;
 }
 
+int f4(int size)
+{
+  int i,j,x,y = 0;
+  int res = 0;
+  printf("log(%d)=%d\n", size, (int)log2f((float)size));
+  for(i=0;i<(int)log2f((float)size);i++)
+    {
+      // just a fixed load for every iteration to make the computation heavy
+      for (x=0;x<1024;x++)
+	{
+	  for (y=0;y<1024;y++)
+	    {
+	      res = ((((res + x + y) % size ) * x % size) * y % size);
+	    }
+	}
+      res = res + rand() % 2;
+    }
+  return res + g(size);
+}
+
 
 int g(int size)
 {
   int i;
   int *buf;
+  int pos = 0;
   int res = 0;
   buf = (int *) calloc(size, sizeof(int));
   // fill random locations with random data
@@ -113,6 +134,9 @@ int main(int argc, char *argv[])
       break;
     case 2:
       res = f3(size);
+      break;
+    case 3:
+      res = f4(size);
       break;
     }
   printf("res=%d\n", res);
