@@ -1,0 +1,6 @@
+2000528181,,cycles
+630228206,,instructions
+543671,,cache-misses
+3169448,,cache-references
+80434,,branch-misses
+81148936,,branch-instructions
