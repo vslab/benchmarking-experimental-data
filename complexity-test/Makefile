@@ -1,4 +1,4 @@
-REP=1
+REP=30
 E1=cycles,instructions,cache-misses
 E2=cache-references,branch-misses,branch-instructions
 MAX=4192304

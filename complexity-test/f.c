@@ -12,7 +12,7 @@ int f(int size)
       // just a fixed load for every iteration to make the computation heavy
       for (x=0;x<1024*1024;x++)
 	{
-	  res = ((res + x) % size ) * x % size;
+	  res = ((res + x) % size ) * (x % 1024);
 	}      
       res = res + rand() % 2;
     }
