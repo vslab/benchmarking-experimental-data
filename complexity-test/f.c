@@ -10,12 +10,9 @@ int f(int size)
   for(i=0;i<((int)log2f((float)size));i++)
     {
       // just a fixed load for every iteration to make the computation heavy
-      for (x=0;x<1024;x++)
+      for (x=0;x<1024*1024;x++)
 	{
-	  for (y=0;y<1024;y++)
-	    {
-	      res = ((((res + x + y) % size ) * x % size) * y % size);
-	    }
+	  res = ((res + x) % size ) * x % size;
 	}      
       res = res + rand() % 2;
     }
