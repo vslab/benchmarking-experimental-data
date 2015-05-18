@@ -22,5 +22,5 @@ L1i cache:             32K
 L2 cache:              4096K
 NUMA node0 CPU(s):     0,1
               total        used        free      shared  buff/cache   available
-Mem:        8175836      976656     3556472        2752     3642708     6897540
+Mem:        8175836      971456     3706916        2732     3497464     6902744
 Swap:             0           0           0

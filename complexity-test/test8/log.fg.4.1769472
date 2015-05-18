@@ -1,6 +1,6 @@
-1530844375,,cycles
-598878106,,instructions
-1570043,,cache-misses
-4767439,,cache-references
-75546,,branch-misses
-106239871,,branch-instructions
+1151789777,,cycles,0.52%
+681853799,,instructions,0.00%
+1555849,,cache-misses,0.19%
+4753865,,cache-references,0.12%
+70385,,branch-misses,13.80%
+105797434,,branch-instructions,0.02%
