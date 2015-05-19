@@ -43,3 +43,4 @@ test: f g fg cpu mem
 	for file in 'log*' ; do sed '/^$$/ d' -i $$file ; sed '/^#/ d' -i $$file ; done
 	lscpu >> machine.txt
 	free >> machine.txt
+	uname -a >> machine.txt
